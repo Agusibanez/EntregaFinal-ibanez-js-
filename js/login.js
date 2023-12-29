@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('username', username);
 
             // Redireccionar después del inicio de sesión
-            window.location.href = "../pages/calculadora.html";
+            window.location.href = "./pages/calculadora.html";
         } else {
             errorMessage.textContent = 'Invalid username or password';
         }
