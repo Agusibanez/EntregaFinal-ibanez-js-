@@ -12,8 +12,6 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: none;
-  align-items: center;
-  align-content: center;
   gap: none;
 }
 
