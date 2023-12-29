@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
     const errorMessage = document.getElementById('error-message');
@@ -7,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
+        window.location.href = 'index.html';
+
+        // Evita que el formulario se envíe de manera predeterminada
+        event.preventDefault();
 
         // Verificar las credenciales (esto debería hacerse en el servidor en un entorno real)
         if (username === 'user' && password === 'password') {
@@ -15,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('username', username);
 
             // Redireccionar después del inicio de sesión
-            window.location.href = "index.html";
+            window.location.href = "../pages/calculadora.html";
         } else {
             errorMessage.textContent = 'Invalid username or password';
         }
